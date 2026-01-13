@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Beauty Salon</title>
+    <meta name="description"
+        content="Secret Beauty Salon menyediakan layanan kecantikan terbaik untuk hari spesial Anda.">
+    <!-- Menggunakan font Google untuk tipografi yang elegan -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome untuk ikon sosial media -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <a href="#home" class="logo-link">
+                <img src="images/logo-v2.jpg" alt="Salon Logo" class="logo-img">
+            </a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li style="margin-top: 10px;"><a href="#home" class="btn btn-primary">Home</a></li>
+                    <li style="margin-top: 10px;"><a href="#gallery" class="btn btn-primary">Galeri</a></li>
+                    <li style="margin-top: 10px;"><a href="#makeup" class="btn btn-primary">Paket Rias</a></li>
+                    <li style="margin-top: 10px;"><a href="#custom-request" class="btn btn-primary">Custom Request</a>
+                    </li>
+                    <li style="margin-top: 10px;"><a href="#contact" class="btn btn-primary">Kontak</a></li>
+                    <li style="margin-top: 10px;"><a href="https://wa.me/6283131032171" target="_blank"
+                            class="btn btn-primary">Booking Now</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Secret Beauty Salon</h2>
+            <p>Pilihan Terbaik untuk Hari Spesial Anda</p>
+            <a href="#gallery" class="btn btn-primary">Lihat Koleksi</a>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section">
+        <div class="container">
+            <h2 class="section-title">Galeri Gown</h2>
+            <div class="gallery-grid">
+                <!-- Item 1: Black -->
+                <div class="gallery-item fade-in">
+                    <img src="images/gaun-hitam.jpg" alt="Midnight Star Ballgown">
+                    <div class="item-info">
+                        <h3>Midnight Star Ballgown</h3>
+                        <p class="price">Rp 12.500.000</p>
+                        <p class="size">Size: S, M (Adjustable)</p>
+                        <button class="btn btn-outline"
+                            onclick="openModal('Midnight Star Ballgown', 'Rp 12.500.000', 'Gaun hitam megah dengan detail payet berkilau bagaikan bintang di langit malam. Desain ballgown memberikan kesan dramatis dan agung.', 'images/gaun-hitam.jpg')">Lihat
+                            Detail</button>
+                    </div>
+                </div>
+                <!-- Item 2: Orange -->
+                <div class="gallery-item fade-in">
+                    <img src="images/gaun-orange.jpg" alt="Autumn Sunset Royal Gown">
+                    <div class="item-info">
+                        <h3>Autumn Sunset Royal Gown</h3>
+                        <p class="price">Rp 5.000.000</p>
+                        <p class="size">Size: M, L, XL</p>
+                        <button class="btn btn-outline"
+                            onclick="openModal('Autumn Sunset Royal Gown', 'Rp 5.000.000', 'Gaun berwarna rust orange dengan layer tulle yang mewah dan bordir emas rumit di bagian dada. Sangat cocok untuk pesta bertema kerajaan.', 'images/gaun-orange.jpg')">Lihat
+                            Detail</button>
+                    </div>
+                </div>
+                <!-- Item 3: Green -->
+                <div class="gallery-item fade-in">
+                    <img src="images/gaun-hijau.jpg" alt="Emerald Queen Cape Dress">
+                    <div class="item-info">
+                        <h3>Emerald Queen Cape Dress</h3>
+                        <p class="price">Rp 18.200.000</p>
+                        <p class="size">Size: Custom Only</p>
+                        <button class="btn btn-outline"
+                            onclick="openModal('Emerald Queen Cape Dress', 'Rp 18.200.000', 'Gaun hijau zamrud dengan jubah panjang menjuntai (cape) yang dipenuhi kristal swarovski. Tampil memukau dan berkelas.', 'images/gaun-hijau.jpg')">Lihat
+                            Detail</button>
+                    </div>
+                </div>
+                <!-- Item 4: Blue Gold -->
+                <div class="gallery-item fade-in">
+                    <img src="images/gaun-biru-gold.jpg" alt="Sapphire & Gold Mermaid">
+                    <div class="item-info">
+                        <h3>Sapphire & Gold Mermaid</h3>
+                        <p class="price">Rp 20.000.000</p>
+                        <p class="size">Size: S, M</p>
+                        <button class="btn btn-outline"
+                            onclick="openModal('Sapphire & Gold Mermaid', 'Rp 20.000.000', 'Perpaduan warna biru sapphire dan detail emas geometris yang modern. Potongan mermaid memperlihatkan lekuk tubuh yang indah.', 'images/gaun-biru-gold.jpg')">Lihat
+                            Detail</button>
+                    </div>
+                </div>
+                <!-- Item 5: Purple -->
+                <div class="gallery-item fade-in">
+                    <img src="images/gaun-ungu.jpg" alt="Lilac Crystal Dream">
+                    <div class="item-info">
+                        <h3>Lilac Crystal Dream</h3>
+                        <p class="price">Rp 11.500.000</p>
+                        <p class="size">Size: L, XL</p>
+                        <button class="btn btn-outline"
+                            onclick="openModal('Lilac Crystal Dream', 'Rp 11.500.000', 'Gaun berwarna lilac lembut dengan taburan payet penuh dan jubah transparan yang anggun. Sempurna untuk tampilan yang dreamy.', 'images/gaun-ungu.jpg')">Lihat
+                            Detail</button>
+                    </div>
+                </div>
+                <!-- Item 6: Blue Gold Variant -->
+                <div class="gallery-item fade-in">
+                    <img src="images/10.jpg" alt="Royal Turquoise Majesty">
+                    <div class="item-info">
+                        <h3>Royal Turquoise Majesty</h3>
+                        <p class="price">Rp 16.000.000</p>
+                        <p class="size">Size: Custom Only</p>
+                        <button class="btn btn-outline"
+                            onclick="openModal('Royal Turquoise Majesty', 'Rp 16.000.000', 'Varian eksklusif dengan paduan warna turquoise dan emas yang lebih dominan. Dirancang untuk pengantin yang ingin tampil beda dan mewah.', 'images/gaun-biru-gold.jpg')">Lihat
+                            Detail</button>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="section-title" style="margin-top: 80px;">Galeri Pakaian Adat Modern</h2>
+            <div class="gallery-grid">
+                <!-- Adat 1 -->
+                <div class="gallery-item fade-in">
+                    <img src="images/adat-dayak.jpg" alt="Adat Dayak Modern">
+                    <div class="item-info">
+                        <h3>Adat Dayak Modern</h3>
+                        <p class="price">Rp 500.000</p>
+                        <p class="size">Size: S, M, L</p>
+                        <button class="btn btn-outline"
+                            onclick="openModal('Adat Dayak Modern', 'Rp 500.000', 'Busana adat Dayak dengan sentuhan modern, lengkap dengan aksesoris bulu enggang khas.', 'images/adat-dayak.jpg')">Lihat
+                            Detail</button>
+                    </div>
+                </div>
+                <!-- Adat 2 -->
+                <div class="gallery-item fade-in">
+                    <img src="images/adat-jawa.jpg" alt="Jawa Tengah Classic">
+                    <div class="item-info">
+                        <h3>Jawa Tengah Classic</h3>
+                        <p class="price">Rp 500.000</p>
+                        <p class="size">Size: S, M, L</p>
+                        <button class="btn btn-outline"
+                            onclick="openModal('Jawa Tengah Classic', 'Rp 500.000', 'Busana adat Jawa Tengah berbahan beludru hitam dengan bordir emas yang elegan dan klasik.', 'images/adat-jawa.jpg')">Lihat
+                            Detail</button>
+                    </div>
+                </div>
+                <!-- Adat 3 -->
+                <div class="gallery-item fade-in">
+                    <img src="images/adat-sumatera.jpg" alt="Songket Palembang Royal">
+                    <div class="item-info">
+                        <h3>Songket Palembang Royal</h3>
+                        <p class="price">Rp 500.000</p>
+                        <p class="size">Size: S, M, L</p>
+                        <button class="btn btn-outline"
+                            onclick="openModal('Songket Palembang Royal', 'Rp 500.000', 'Keanggunan adat Palembang dengan mahkota suntiang dan kain songket benang emas asli.', 'images/adat-sumatera.jpg')">Lihat
+                            Detail</button>
+                    </div>
+                </div>
+                <!-- Adat 4 -->
+                <div class="gallery-item fade-in">
+                    <img src="images/adat-modern.jpg" alt="Tenun Ikat Kontemporer">
+                    <div class="item-info">
+                        <h3>Tenun Ikat Kontemporer</h3>
+                        <p class="price">Rp 500.000</p>
+                        <p class="size">Size: S, M, L</p>
+                        <button class="btn btn-outline"
+                            onclick="openModal('Tenun Ikat Kontemporer', 'Rp 500.000', 'Dress modern dengan sentuhan kain tenun ikat tradisional. Cocok untuk acara semi-formal.', 'images/adat-modern.jpg')">Lihat
+                            Detail</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Makeup Packages Section -->
+    <section id="makeup" class="section">
+        <div class="container">
+            <h2 class="section-title">Paket Rias (Makeup)</h2>
+            <!-- Salon Beauty Price List (HTML Implementation) -->
+            <div class="price-list-container">
+                <div class="price-list-header">
+                    <h2>SECRET BEAUTY SALON</h2>
+                    <div class="price-list-subtitle">PRICE LIST</div>
+                </div>
+
+                <!-- Section 1: Reguler Makeup -->
+                <div class="price-section">
+                    <div class="category-bar">REGULER MAKEUP</div>
+                    <div class="items-list">
+                        <div class="price-item">
+                            <span class="item-name">Graduation</span>
+                            <span class="item-price">Rp 275.000</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="item-name">Bridesmaid</span>
+                            <span class="item-price">Rp 275.000</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="item-name">Wedding Guest</span>
+                            <span class="item-price">Rp 275.000</span>
+                        </div>
+                        <div style="margin: 10px 0;"></div>
+                        <div class="price-item">
+                            <span class="item-name">Hairdo</span>
+                            <span class="item-price">Rp 150.000</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="item-name">Hijab do</span>
+                            <span class="item-price">Rp 50.000</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="item-name">Softlens</span>
+                            <span class="item-price">Rp 50.000</span>
+                        </div>
+                        <div class="transport-note">**Transport disesuaikan dengan jarak lokasi</div>
+                    </div>
+                </div>
+
+                <!-- Section 2: Special Occasion -->
+                <div class="price-section">
+                    <div class="category-bar">SPECIAL OCCASION</div>
+                    <div class="items-list">
+                        <div class="price-item">
+                            <span class="item-name">Engagement / Prewed</span>
+                            <span class="item-price">Rp 500.000</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="item-name">Sister Bride</span>
+                            <span class="item-price">Rp 500.000</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="item-name">Mom Bride</span>
+                            <span class="item-price">Rp 500.000</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="item-name">Maternity</span>
+                            <span class="item-price">Rp 500.000</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="item-name">Sweet 17</span>
+                            <span class="item-price">Rp 500.000</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="item-name">Douyin Makeup</span>
+                            <span class="item-price">Rp 500.000</span>
+                        </div>
+                        <div style="margin: 10px 0;"></div>
+                        <div class="price-item">
+                            <span class="item-name">Prewedding + Retouch</span>
+                            <span class="item-price">Rp 650.000</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="item-name">Pengajian + Siraman</span>
+                            <span class="item-price">Rp 650.000</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="item-name">Hairdo</span>
+                            <span class="item-price">Rp 200.000</span>
+                        </div>
+                        <div class="transport-note">**Transport disesuaikan dengan jarak lokasi</div>
+                    </div>
+                </div>
+
+                <!-- Section 3: Private Basic -->
+                <div class="price-section">
+                    <div class="category-bar">PRIVATE BASIC</div>
+                    <div class="items-list">
+                        <div class="price-item" style="display: block;">
+                            <div style="font-weight: bold; margin-bottom: 5px;">Peserta : 1 Orang / Kelas</div>
+                            <div style="margin-bottom: 5px;">Waktu : 4 Jam</div>
+                            <div style="margin-bottom: 10px;">Lokasi : Secret Beauty Salon Studio</div>
+                        </div>
+                        <div class="price-item">
+                            <span class="item-name">1 x Pertemuan</span>
+                            <span class="item-price">Rp 550.000</span>
+                        </div>
+                        <div class="price-item">
+                            <span class="item-name">3 x Pertemuan</span>
+                            <span class="item-price">Rp 1.500.000</span>
+                        </div>
+                        <div style="margin-top: 10px; font-size: 0.9rem; color: #5D4037;">
+                            <strong>Fasilitas:</strong> Makeup dan Tools sudah disediakan, Portofolio Makeup,
+                            Sertifikat.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-contact">
+                    <span>IG : @salon.beauty</span>
+                    <span>WA : +62 831-3103-2171</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Custom Request Section -->
+    <section id="custom-request" class="section">
+        <div class="container">
+            <h2 class="section-title">Custom Request</h2>
+            <p class="section-desc">Punya desain impian sendiri? Ceritakan kepada kami dan kami akan mewujudkannya.</p>
+            <form id="customForm" class="custom-form">
+                <div class="form-group">
+                    <label for="name">Nama Lengkap</label>
+                    <input type="text" id="name" name="name" required placeholder="Masukkan nama Anda">
+                </div>
+
+                <div class="form-group">
+                    <label for="whatsapp">Nomor WhatsApp</label>
+                    <input type="tel" id="whatsapp" name="whatsapp" required placeholder="Contoh: 08123456789">
+                </div>
+                <div class="form-group">
+                    <label for="description">Deskripsi Custom (Model, Warna, Ukuran, dll)</label>
+                    <textarea id="description" name="description" rows="5" required
+                        placeholder="Jelaskan detail gaun yang Anda inginkan..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Kirim Request</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer / Contact Section -->
+    <footer id="contact" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <img src="images/logo-v2.jpg" alt="Salon Logo" class="footer-logo"
+                        style="width: 150px; margin-bottom: 15px;">
+                    <h3>Secret Beauty Salon</h3>
+                    <p>Jl. KH. Hasyim Asy'ari, Lendang Bedurik, Selong, Lotim, Nusa Tenggara Barat</p>
+                    <div class="map-link" style="margin-top: 15px;">
+                        <a href="https://www.google.com/maps/search/?api=1&query=Jl.+KH.+Hasyim+Asy'ari,+Lendang+Bedurik,+Selong,+Lotim,+Nusa+Tenggara+Barat"
+                            target="_blank" title="Lihat di Google Maps"
+                            style="color: #FF9EB5; font-size: 1.5rem; transition: 0.3s;">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </a>
+                    </div>
+                    <p>Email: info@salon.com</p>
+                </div>
+                <div class="footer-social">
+                    <h4>Ikuti Kami</h4>
+                    <div class="social-icons">
+                        <a href="https://wa.me/6283131032171" target="_blank" title="WhatsApp"><i
+                                class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.facebook.com/faraayu.riandani" target="_blank" title="Facebook"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/madebyra02?igsh=MXB1dHZ5OWFwbnd3OQ==" target="_blank"
+                            title="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Secret Beauty Salon. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Detail -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <img id="modalImg" src="" alt="Detail Gambar">
+                <div class="modal-text">
+                    <h2 id="modalTitle">Judul Produk</h2>
+                    <p id="modalPrice" class="price">Harga</p>
+                    <p id="modalDesc">Deskripsi</p>
+                    <a id="modalWaLink" href="#" target="_blank" class="btn btn-primary">Pesan Sekarang</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
